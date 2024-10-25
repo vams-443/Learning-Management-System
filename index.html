@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Learning Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <p>Welcome, <span id="userName">[User Name]</span>! Here are your latest updates:</p>
+            <ul>
+                <li>Upcoming assignments: 2</li>
+                <li>New announcements: 3</li>
+                <li>Your progress: 70%</li>
+            </ul>
+        </section>
+
+        <section id="courses">
+            <h2>Course Catalog</h2>
+            <div class="course-list">
+                <div class="course-item">
+                    <h3>Course Title 1</h3>
+                    <p>Description of Course 1.</p>
+                    <button class="enroll-btn">Enroll</button>
+                </div>
+                <div class="course-item">
+                    <h3>Course Title 2</h3>
+                    <p>Description of Course 2.</p>
+                    <button class="enroll-btn">Enroll</button>
+                </div>
+                <!-- Add more courses as needed -->
+            </div>
+        </section>
+
+        <section id="profile">
+            <h2>User Profile</h2>
+            <form id="profileForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="[User Name]">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="[User Email]">
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Learning Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
