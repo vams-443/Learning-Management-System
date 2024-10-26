@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LMS Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <header>
         <h1>Learning Management System</h1>
         <nav>
-            <ul>
+            <ul class="navbar">
                 <li><a href="#dashboard">Dashboard</a></li>
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#profile">Profile</a></li>
@@ -22,7 +22,7 @@
     <main>
         <section id="dashboard">
             <h2>Dashboard</h2>
-            <p>Welcome, <span id="userName">[User Name]</span>! Here are your latest updates:</p>
+            <p>Welcome, <span id="userName">User</span>! Here are your latest updates:</p>
             <ul>
                 <li>Upcoming assignments: 2</li>
                 <li>New announcements: 3</li>
@@ -51,10 +51,10 @@
             <h2>User Profile</h2>
             <form id="profileForm">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" placeholder="User Name">
                 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" placeholder="Email">
                 
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="User Password">
@@ -68,6 +68,6 @@
         <p>&copy; 2024 Learning Management System</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scrip.js"></script>
 </body>
 </html>
