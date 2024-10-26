@@ -2,30 +2,38 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8; /* Light background */
+    background-image: url("https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?cs=srgb&dl=pexels-codioful-7130560.jpg&fm=jpg");
 }
 
 header {
-    background: #007bff; /* Blue */
     color: white;
     padding: 1rem;
     text-align: center;
 }
 
-nav ul {
+nav ul.navbar {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
+nav ul.navbar li {
     display: inline;
     margin-right: 15px;
 }
 
-nav ul li a {
+nav ul.navbar li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul.navbar li a:hover {
+    color: #333; /* Change to dark color on hover */
+    background-color: #ffffffaa; /* Add a semi-transparent white background on hover */
+    transform: scale(1.1); /* Slightly enlarge the text */
 }
 
 main {
@@ -96,8 +104,7 @@ form input {
 footer {
     text-align: center;
     padding: 1rem;
-    background: white(225, 0, 255); /* Blue */
-    color: red;
+    color: #333;
     position: relative;
     bottom: 0;
     width: 100%;
